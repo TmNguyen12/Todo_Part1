@@ -1,7 +1,7 @@
 import React from 'react';
-import {Todo} from './todo_list_item';
+import {Todo} from '../todo_list/todo_list_item';
 // import TodoListContainer from './todo_list_container';
-
+import TodoForm from '../todo_list/todo_form';
 
 class TodoList extends React.Component {
 
@@ -16,8 +16,9 @@ class TodoList extends React.Component {
               <Todo key={idx} todo={todo} />
             ))
           }
-
         </ul>
+        debugger;
+        <TodoForm receiveTodo={this.props.receiveTodo}/> //6
       </div>
     );
 
